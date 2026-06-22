@@ -35,6 +35,8 @@ Pour dépasser les limitations du glouton, j'ai implémenté un algorithme de re
 
 Comparaison des deux algorithmes et étude de l'influence du nombre de lignes (droites et circulaires) sur l'inefficacité finale. Application au réseau de métro de Lyon pour comparer le réseau réel au réseau optimisé.
 
+On trouve que de manière globale avec des stations imaginaires, entre 25 à 50 stations, il est ideal de commencer le recuit simulé avec une seule ligne circulaire. Le nombre de lignes droites a mettre idealement au debut du recuit simulé augmente avec le nombre de stations, ce qui parrait naturel. Des simulations sur le reseau de Lyon permettent de confirmer la theorie avec le seul changement que pour 40 stations, l'idéal est : 1 ligne circulaire et 4 lignes droites au debut du recuit simulé. Mais pour le réseau de Lyon (a cause de la forme particulière de la distribution des stations), les meilleurs reseaux a la fin du recuit simulé s'obtiennent avec 1 ligne circulaire et 3 lignes droites. 
+
 ## Fichiers
 
 - `reseau2.py` : structure de données principale (classe `Reseau2`)
