@@ -8,7 +8,7 @@ Comment concevoir un réseau de métro efficace pour une ville donnée ?
 
 Pour répondre à cette question, j'ai défini une fonction d'inefficacité qui permet de mesurer si un réseau est bon ou mauvais. Elle prend en compte deux choses : la distance moyenne qu'un usager doit parcourir pour aller d'une station à une autre (en tenant compte des correspondances et des arrêts), et la longueur totale des tunnels à creuser et entretenir. L'objectif est de minimiser cette fonction.
 
-Les stations sont supposées réparties sur un disque, avec un poids inversement proportionnel à leur distance au centre (modèle de Clark), ce qui reflète le gradient de densité d'une ville réelle.
+Les stations sont supposées réparties sur un disque, avec un poids proportionel a `exp(-k*u) `(u la distance au centre du réseau) (modèle de Clark), ce qui reflète le gradient de densité d'une ville réelle.
 
 ## Hypothèses de travail
 
